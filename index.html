@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Fan Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Football Fan Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our football community</p>
+
+    <form id="survey-form" action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label id="name-label" for="name">Name <input type="text" name="name" id="name"
+                    placeholder="Enter your name" required></label>
+            <label id="email-label" for="email">Email <input type="email" name="email" id="email"
+                    placeholder="Enter your Email" required></label>
+            <label id="number-label" for="number">Age <input type="number" name="number" id="number" min="13" max="120"
+                    placeholder="Age" required></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown">Favorite Team
+                <select id="dropdown" name="dropdown">
+                    <option disabled selected value="">Select your favorite team</option>
+                    <option value="1">Real Madrid</option>
+                    <option value="2">FC Barcelona</option>
+                    <option value="3">Manchester United</option>
+                    <option value="4">Bayern Munich</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <p>Recommend Champions League?</p>
+            <label><input type="radio" value="definitely" name="user-recommend" class="input-radio"
+                    checked>Definitely</label>
+            <label><input type="radio" value="maybe" name="user-recommend" class="input-radio">Maybe</label>
+            <label><input type="radio" value="not-sure" name="user-recommend" class="input-radio">Not sure</label>
+        </fieldset>
+
+        <fieldset>
+            <p>Improvements?</p>
+            <label><input name="prefer" value="stadium-experience" type="checkbox" class="input-checkbox">Stadium
+                Experience</label>
+            <label><input name="prefer" value="tv-coverage" type="checkbox" class="input-checkbox">TV Coverage</label>
+            <label><input name="prefer" value="player-interviews" type="checkbox" class="input-checkbox">Player
+                Interviews</label>
+            <label><input name="prefer" value="match-highlights" type="checkbox" class="input-checkbox">Match
+                Highlights</label>
+            <label><input name="prefer" value="fan-engagement" type="checkbox" class="input-checkbox">Fan
+                Engagement</label>
+            <label><input name="prefer" value="merchandise" type="checkbox" class="input-checkbox">Merchandise</label>
+        </fieldset>
+
+        <fieldset>
+            <p>Comments?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <button id="submit" type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
