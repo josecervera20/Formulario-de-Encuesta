@@ -1,3 +1,4 @@
+/* Estilos generales para el cuerpo de la página */
 body {
     width: 100%;
     height: 100vh;
@@ -8,12 +9,14 @@ body {
     font-size: 16px;
 }
 
+/* Estilos para los IDs 'title' y 'description' */
 #title,
 #description {
     text-align: center;
     margin: 1em auto;
 }
 
+/* Estilos para el ID 'survey-form' */
 #survey-form {
     width: 60vw;
     max-width: 500px;
@@ -22,20 +25,24 @@ body {
     padding-bottom: 2em;
 }
 
+/* Estilos para los elementos 'fieldset' */
 fieldset {
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #bbcde5;
 }
 
+/* Estilos para el último elemento 'fieldset' */
 fieldset:last-of-type {
     border-bottom: none;
 }
 
+/* Estilos para los elementos 'label' */
 label {
     display: block;
 }
 
+/* Estilos para inputs de texto, email, número, select y textarea */
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -50,12 +57,14 @@ textarea {
     margin-bottom: 10px;
 }
 
+/* Estilos para inputs de radio y checkbox */
 input[type="radio"],
 input[type="checkbox"] {
     display: inline;
     margin: 0 10px 10px 0;
 }
 
+/* Estilos para el ID 'submit' (botón de envío) */
 #submit {
     display: block;
     width: 100%;
@@ -69,6 +78,7 @@ input[type="checkbox"] {
     transition: background-color 0.3s ease;
 }
 
+/* Estilos al pasar el ratón por el ID 'submit' */
 #submit:hover {
     background-color: #004e89;
 }
