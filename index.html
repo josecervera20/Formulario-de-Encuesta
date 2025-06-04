@@ -2,26 +2,42 @@
 <html lang="en">
 
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
     <title>Football Fan Survey Form</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Título principal del formulario -->
     <h1 id="title">Football Fan Survey Form</h1>
+
+    <!-- Descripción introductoria del formulario -->
     <p id="description">Thank you for taking the time to help us improve our football community</p>
 
+    <!-- Formulario principal -->
     <form id="survey-form" action="https://register-demo.freecodecamp.org" method="post">
+
+        <!-- Campo: Nombre, Email y Edad -->
         <fieldset>
-            <label id="name-label" for="name">Name <input type="text" name="name" id="name"
-                    placeholder="Enter your name" required></label>
-            <label id="email-label" for="email">Email <input type="email" name="email" id="email"
-                    placeholder="Enter your Email" required></label>
-            <label id="number-label" for="number">Age <input type="number" name="number" id="number" min="13" max="120"
-                    placeholder="Age" required></label>
+            <label id="name-label" for="name">
+                Name
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label" for="email">
+                Email
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </label>
+            <label id="number-label" for="number">
+                Age
+                <input type="number" name="number" id="number" min="13" max="120" placeholder="Age" required>
+            </label>
         </fieldset>
 
+        <!-- Campo: Selección de equipo favorito -->
         <fieldset>
             <label for="dropdown">Favorite Team
                 <select id="dropdown" name="dropdown">
@@ -35,37 +51,64 @@
             </label>
         </fieldset>
 
+        <!-- Campo: Recomendación de la Champions League -->
         <fieldset>
             <p>Recommend Champions League?</p>
-            <label><input type="radio" value="definitely" name="user-recommend" class="input-radio"
-                    checked>Definitely</label>
-            <label><input type="radio" value="maybe" name="user-recommend" class="input-radio">Maybe</label>
-            <label><input type="radio" value="not-sure" name="user-recommend" class="input-radio">Not sure</label>
+            <label>
+                <input type="radio" value="definitely" name="user-recommend" class="input-radio" checked>
+                Definitely
+            </label>
+            <label>
+                <input type="radio" value="maybe" name="user-recommend" class="input-radio">
+                Maybe
+            </label>
+            <label>
+                <input type="radio" value="not-sure" name="user-recommend" class="input-radio">
+                Not sure
+            </label>
         </fieldset>
 
+        <!-- Campo: Selección de mejoras sugeridas -->
         <fieldset>
             <p>Improvements?</p>
-            <label><input name="prefer" value="stadium-experience" type="checkbox" class="input-checkbox">Stadium
-                Experience</label>
-            <label><input name="prefer" value="tv-coverage" type="checkbox" class="input-checkbox">TV Coverage</label>
-            <label><input name="prefer" value="player-interviews" type="checkbox" class="input-checkbox">Player
-                Interviews</label>
-            <label><input name="prefer" value="match-highlights" type="checkbox" class="input-checkbox">Match
-                Highlights</label>
-            <label><input name="prefer" value="fan-engagement" type="checkbox" class="input-checkbox">Fan
-                Engagement</label>
-            <label><input name="prefer" value="merchandise" type="checkbox" class="input-checkbox">Merchandise</label>
+            <label>
+                <input name="prefer" value="stadium-experience" type="checkbox" class="input-checkbox">
+                Stadium Experience
+            </label>
+            <label>
+                <input name="prefer" value="tv-coverage" type="checkbox" class="input-checkbox">
+                TV Coverage
+            </label>
+            <label>
+                <input name="prefer" value="player-interviews" type="checkbox" class="input-checkbox">
+                Player Interviews
+            </label>
+            <label>
+                <input name="prefer" value="match-highlights" type="checkbox" class="input-checkbox">
+                Match Highlights
+            </label>
+            <label>
+                <input name="prefer" value="fan-engagement" type="checkbox" class="input-checkbox">
+                Fan Engagement
+            </label>
+            <label>
+                <input name="prefer" value="merchandise" type="checkbox" class="input-checkbox">
+                Merchandise
+            </label>
         </fieldset>
 
+        <!-- Campo: Comentarios adicionales -->
         <fieldset>
             <p>Comments?</p>
             <textarea id="comments" class="input-textarea" name="comment"
                 placeholder="Enter your comment here..."></textarea>
         </fieldset>
 
+        <!-- Botón de envío del formulario -->
         <fieldset>
             <button id="submit" type="submit">Submit</button>
         </fieldset>
+
     </form>
 </body>
 
